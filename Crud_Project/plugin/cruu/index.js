@@ -13,5 +13,5 @@ const StudentPluginn = {
   server.route(DeleteStudent)
   server.route(GetAllStudent)
   },
-};
+};4
 module.exports = StudentPluginn;
