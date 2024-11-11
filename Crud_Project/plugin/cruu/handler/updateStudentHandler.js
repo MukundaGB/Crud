@@ -3,7 +3,7 @@ exports.updateStduent = async (request , h) => {
   try {
     const id=request.params.id
     const filter = { _id : id };
-    const update = {name:request.payload.name ,class : request.payload.class} ;
+    const update = {name:request.payload.name ,class : request.payload.class};
   
  await Student.findOneAndUpdate(filter,update , {upsert : true})
     return h.response({ message: "Student updated successfully" }).code(201);
